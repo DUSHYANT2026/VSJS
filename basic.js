@@ -321,4 +321,10 @@
 
 
 
-console.log("king of kings")
+// console.log("king of kings")
+
+
+// const x = (n1 , n2) => {         // example of arrow function with the return
+//     return n1+n2;
+// }
+// console.log(x(7,7))
