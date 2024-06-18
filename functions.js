@@ -9,30 +9,37 @@ function sayMyName(){
 
 // sayMyName()
 
+
+
 // function addTwoNumbers(number1, number2){
 
 //     console.log(number1 + number2);
+// }addTwoNumbers(69,96)
+
+
+
+// function addTwoNumbers(number1, number2){
+
+//     // let result = number1 + number2
+//     // return result
+//     return number1 + number2
 // }
 
-function addTwoNumbers(number1, number2){
-
-    // let result = number1 + number2
-    // return result
-    return number1 + number2
-}
-
-const result = addTwoNumbers(3, 5)
+// const result = addTwoNumbers(3, 5)
 
 // console.log("Result: ", result);
 
 
-function loginUserMessage(username = "DUSHYANT THE KING OF KINGS"){
-    if(!username){
-        console.log("PLease enter a username");
-        return
-    }
-    return `${username} just logged in`
-}
+
+
+
+// function loginUserMessage(username = "DUSHYANT THE KING OF KINGS"){
+//     if(!username){
+//         console.log("PLease enter a username");
+//         return
+//     }
+//     return `${username} just logged in`
+// }
 // console.log(loginUserMessage())               //  THE DEAFAULT WE CAN SET EASILY
 // console.log(loginUserMessage("roman regins"))
 // console.log(loginUserMessage("the game hhh "))
@@ -79,13 +86,13 @@ function loginUserMessage(username = "DUSHYANT THE KING OF KINGS"){
 
 
 //var c = 300                   // var can't able to differ global and block scope
-let a = 300
-if (true) {
-    let a = 10                     // block or local scope the declare inside {} of condition or function etc
-    const b = 20
-    // console.log("INNER: ", a);
+// let a = 300
+// if (true) {
+//     let a = 10                     // block or local scope the declare inside {} of condition or function etc
+//     const b = 20
+//     // console.log("INNER: ", a);
     
-}
+// }
 // console.log(a);               //  global scope just like global variable in cpp 
 // console.log(b);
 // console.log(c);
@@ -93,34 +100,34 @@ if (true) {
 
 
 
-function one(){
-    const username = "Dushyant "
+// function one(){
+//     const username = "Dushyant "
 
-    function two(){                               // it is like nested scope just woke like gobal and block
-        const website = "the king of kings"
-        console.log(username);
-        console.log(website);  
-    }
-    // console.log(website);                // it show error can't acces the local outside the function
+//     function two(){                               // it is like nested scope just woke like gobal and block
+//         const website = "the king of kings"
+//         console.log(username);
+//         console.log(website);  
+//     }
+//     // console.log(website);                // it show error can't acces the local outside the function
 
-     two()
+//      two()
 
-}
-// one()                // this is the ways to call the functions , also we can provide the argument in it without describe the datatype 
-
-
+// }
+// // one()                // this is the ways to call the functions , also we can provide the argument in it without describe the datatype 
 
 
 
-if (true) {
-    const username = "Dushyant"
-    if (username === "Dushyant") {
-        const website = "  youtube"
-        // console.log(username + website);
-    }
-    // console.log(website);       // it show the error because it accesss outside the scope
-}
-// console.log(username);         // it show the error because it accesss outside the scope
+
+
+// if (true) {
+//     const username = "Dushyant"
+//     if (username === "Dushyant") {
+//         const website = "  youtube"
+//         // console.log(username + website);
+//     }
+//     // console.log(website);       // it show the error because it accesss outside the scope
+// }
+// // console.log(username);         // it show the error because it accesss outside the scope
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
@@ -141,16 +148,16 @@ if (true) {
 // +++++++++++++++ Arrow function and this keyword +++++++++++++++++++ 
 
 
-const user = {
-    username: "Dushyant",
-    price: 9999999,
+// const user = {
+//     username: "Dushyant",
+//     price: 9999999,
 
-    welcomeMessage: function() {
-        console.log(`${this.username} , welcome to website`);
-        // console.log(this);
-    } 
+//     welcomeMessage: function() {
+//         console.log(`${this.username} , welcome to website`);
+//         // console.log(this);
+//     } 
 
-}
+// }
 // user.welcomeMessage()
 // user.username = "NEW Dushyant"
 // user.welcomeMessage()
@@ -187,9 +194,14 @@ const user = {
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
-// const addTwo = (num1, num2) => ({username: "Dushyant-sharma"})
+// const addTwo = (num1, num2) => (  num1 + num2  , {username: "Dushyant-sharma"} ) 
 
 // console.log(addTwo(3, 4))
+
+
+const username = () => (  {username: "Dushyant-sharma"}    );
+
+// console.log(username());  // Output: { username: "Dushyant-sharma" }
 
 
 
@@ -207,3 +219,27 @@ const user = {
 // ( (name) => {
 //     console.log(`we call this function using arrow format of  ( () => {}) ()   ${name}`);
 // } )('Dushyant') 
+
+
+
+
+//   +++++++++++++++++++++++++ revision +++++++++++++++++++++++
+
+
+// function y(){
+//     console.log("king of kings fucks")
+// }
+// y()
+
+
+
+// const yy = function alex(num1, num2, num3){
+//     return num1 + num2 * num3;
+// } 
+// console.log(yy(10, 20, 30));
+
+
+
+( () => {
+    console.log("wwe")
+})()

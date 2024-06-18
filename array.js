@@ -16,7 +16,7 @@
 
 
 
-const nums = new Array(7,5,4,3 ,100 , 200 ,300,1000)   // another way to use the array
+// const nums = new Array(7,5,4,3 ,100 , 200 ,300,1000)   // another way to use the array
 
 // nums.unshift(9)           // shift the element from the start and add new element in the start
 // nums.shift()
@@ -138,27 +138,27 @@ const nums = new Array(7,5,4,3 ,100 , 200 ,300,1000)   // another way to use the
 
 // const newsong = new Object()        // this is the singleton oject declaretion
 
-const newsong = {
-    name : "cody theme song",
-    songid : "1234kingdoms",
-    singername: "wwe theme"
-}
+// const newsong = {
+//     name : "cody theme song",
+//     songid : "1234kingdoms",
+//     singername: "wwe theme"
+// }
 
 // console.log(newsong);   console.table(newsong);
 
-const song = {
-    englishsong : "hymn the coldplay",
-    wwetheme : {
-        hhhtheme : {
-            first : "king of kings",
-            second : " the game"
-        },
-        johnchena : {
-            first : "the world life",
-            second : "tuuu ruuu tuuu tuu ruu tuuu"
-        }
-    }
-}
+// const song = {
+//     englishsong : "hymn the coldplay",
+//     wwetheme : {
+//         hhhtheme : {
+//             first : "king of kings",
+//             second : " the game"
+//         },
+//         johnchena : {
+//             first : "the world life",
+//             second : "tuuu ruuu tuuu tuu ruu tuuu"
+//         }
+//     }
+// }
 
 // console.log(song.wwetheme.johnchena.second)          // by using . we can accces all the nested objects and its variable
 
@@ -233,3 +233,8 @@ const obj4 = {5: "a", 6: "b"}
 //     {}
 // ]
 
+const chai =  () => {
+    const username = "Dushyant-sharma"
+    console.log(this.username);
+}
+chai();
