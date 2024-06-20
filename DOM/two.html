@@ -30,12 +30,46 @@
         <div class="days">SATURDAY</div>
         <div class="days">SUNDAY</div>
     </div>
-    <script>
-        const temp = document.querySelector('.parent');
-        console.log(temp);
-    </script>
 </body>
-</html>
+<script>
+
+    const temp = document.querySelector('.parent')
+    console.log(temp);
+    console.log(temp.children);
+    console.log(temp.children[3].innerHTML);
+
+
+    const newx = Array.from(temp.children);                 //  this is the way to convert an html collection into array to use all the properties of array 
+
+    console.log(newx);
+
+    for(const it of newx){
+        console.log(it.innerHTML);
+    }
+     
+
+
+    temp.children[1].style.color = "orange"
+    temp.children[3].style.color = "green"
+    temp.children[5].style.color = "yellow"
+
+    console.log(temp.firstElementChild);                 // properties of the query selector
+    console.log(temp.lastElementChild);
+
+    const allday = document.querySelectorAll('.days');       // this will give us a node list
+    console.log(allday);
+
+    const nums = document.querySelector('.days');          // give the first class of the name day 
+    console.log(nums.innerHTML);
+
+    console.log(nums.parentElement);                      // properties of the query selector , we can find the parent of the class also
+    console.log(nums.nextSibling); 
+
+    console.log("NODES: ", parent.childNodes);            // all the nodes tree
+    
+
+</script>
+</html> 
 
 
 
@@ -43,9 +77,12 @@
 
 
 
+
+ 
 
 
 <!-- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,14 +111,14 @@
         
     // }
     parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
 
     const dayOne = document.querySelector('.day')
-    // console.log(dayOne);
-    // console.log(dayOne.parentElement);
-    // console.log(dayOne.nextElementSibling);
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
 
     console.log("NODES: ", parent.childNodes);
 </script>
-</html> -->
+</html>  -->

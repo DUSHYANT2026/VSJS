@@ -83,7 +83,7 @@ for (let i = 1; i <= 10; i++) {
 
 
 
-// +++++++++++++++++ for of loop (for(atuo it : x) in cpp)  here we use (for(auto it of x)) ++++++++++++++++
+// +++++++++++++++++ for of loop (for(atuo it : x) in cpp)  here we use (for(const it of x)) ++++++++++++++++
 
 // ["", "", ""]
 // [{}, {}, {}]

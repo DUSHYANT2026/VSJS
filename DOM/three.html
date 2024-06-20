@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUSHYANT WEB PAGE </title>
+
+
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body text-align = "center">
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    // div.id = "getit"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    // div.innerText = "Chai aur code"
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)                       //  show the all the changes in the webpage from the memory
+
+
+
+
+    const heading = document.createElement('h1');
+    console.log(heading);
+    heading.setAttribute("name" , "genertate names")
+
+    heading.style.color = "yellow"
+
+    // heading.style.width = "50px";
+    // heading.style.height = "15px";
+
+
+    const add = document.createTextNode("HEADING OF THIS WEB PAGE IS KING OF KINGS");
+    heading.appendChild(add)
+
+    document.body.append(heading);
+
+
+</script>
+
+<!-- <style>
+    h1 {
+        width : "40px";
+        height : "80px";
+    }
+</style> -->
+
+</html>
