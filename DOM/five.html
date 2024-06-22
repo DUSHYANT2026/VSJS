@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: black;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function adding(newname){
+        const temp = document.createElement('li');
+        temp.innerHTML = newname
+        document.querySelector('.language').appendChild(temp);
+    }
+    adding("cpp");
+    adding("java");
+
+    function addoptimum(name){
+        const temp = document.createElement('li');
+        temp.appendChild(document.createTextNode(name));                     // THIS IS MORE OPTIMISE THAN PREVIOUS CREATE WITHOUT TREE TRAVERSAL
+        document.querySelector('.language').appendChild(temp);
+    }
+    addoptimum("python")
+
+    const change = document.querySelector("li:nth-child(2)");              // WAY TO SELECT THE ELEMENT AND WE CAN CHANGE THEM
+
+    change.innerHTML = "king of kings"                                    // better way to update in big [projects]
+
+    const temp = document.createElement('li');
+    temp.innerText = "update"
+    change.replaceWith(temp);
+
+    const firstchange = document.querySelector("li:nth-child(1)");
+    firstchange.outerHTML = '<li>all about dbms</li>'                         // change using outter html
+
+    const last = document.querySelector("li:last-child");
+    last.remove();                                                           // remove the selected element
+
+</script>
+</html> 
+ 
