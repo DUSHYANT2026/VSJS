@@ -1,0 +1,2 @@
+// console.log("TO CHECK THAT PROPER WORK OF SCRIPT")
+
