@@ -1,11 +1,11 @@
 // console.log("TO CHECK THAT PROPER WORK OF SCRIPT")
 
 
-const temp = document.querySelectorAll('.button')
+const temp = document.querySelectorAll('.buttons')
 const body = document.querySelector('body')
 
-temp.forEach(function (button){
-  button.addEventListener('click' , function(nums){
+temp.forEach(function (tempvar){
+  tempvar.addEventListener('click' , function(nums){
 
 
                                                                            // simple project just add an event (click) 
@@ -61,3 +61,28 @@ temp.forEach(function (button){
 
   });
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  let incrementBtn = document.getElementById('incrementBtn');
+  let subone = document.getElementById('subone');
+  let results = document.getElementById('results');
+  let counter = 0;
+
+  incrementBtn.addEventListener('click', function() {
+    counter += 1;
+    results.innerHTML = counter;
+  });
+
+  subone.addEventListener('click', function() {
+    counter -= 1;
+    results.innerHTML = counter;
+  });
+
+});
+
+
+
