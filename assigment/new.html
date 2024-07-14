@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>HTML5 Basics</title>
+</head>
+<body>
+    <h1>Welcome to HTML5</h1>
+    <p>This is a basic HTML5 document structure.</p>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Semantic Elements</title>
+</head>
+<body>
+    <header>
+        <h1>Site Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Main Section</h2>
+        <p>This is a main section of content.</p>
+    </section>
+    <aside>
+        <h2>Related Information</h2>
+        <p>This is some related information.</p>
+    </aside>
+    <footer>
+        <p>Site Footer</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Forms</title>
+</head>
+<body>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website"><br>
+        
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        context.fillStyle = 'green';
+        context.fillRect(10, 10, 150, 100);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Audio and Video</title>
+</head>
+<body>
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    
+    <h2>Video Example</h2>
+    <video controls width="320" height="240">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>ARIA Roles</title>
+</head>
+<body>
+    <div role="banner">
+        <h1>ARIA Banner Role</h1>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main role="main">
+        <section>
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>Footer Information</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Basic CSS Styling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        p {
+            color: #666;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS</h1>
+    <p>This is a paragraph styled with basic CSS.</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ddd;
+            padding: 20px;
+        }
+        .box {
+            background-color: #f90;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background-color: #eee;
+        }
+        .grid-item {
+            background-color: #87ceeb;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Responsive Design</title>
+    <style>
+        .box {
+            width: 100%;
+            padding: 20px;
+            background-color: #ff6347;
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .box {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>This box is 100% wide on small screens and 50% wide on larger screens.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>CSS Transitions</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4caf50;
+            transition: background-color 0.5s, transform 0.5s;
+        }
+        .box:hover {
+            background-color: #ff5722;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>CSS Animations</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #1e90ff;
+            animation: move 2s infinite;
+        }
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --main-bg-color: #282c34;
+            --main-text-color: #61dafb;
+            --main-padding: 20px;
+        }
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            padding: var(--main-padding);
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using CSS Variables</h1>
+    <p>This text is styled using CSS variables.</p>
+</body>
+</html>
