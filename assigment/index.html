@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="updateCount()" id = 'temp'> countdown start</button>
+    </div>
+
+    <script>
+        let count = 1000;
+
+    function updateCount() {
+    count -= 1;
+    let newtemp = document.getElementById('temp');
+    newtemp.innerHTML = count;
+    console.log(`Count is now: ${count}`);
+}
+
+setInterval(updateCount, 1000);
+
+    </script>
+</body>
+</html>
