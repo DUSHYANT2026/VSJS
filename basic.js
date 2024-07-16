@@ -328,5 +328,8 @@
 //     return n1+n2;
 // }
 // console.log(x(7,7))
-//
-//
+
+
+
+// console.log("king of kings")          // display in the console
+// document.write("king of kings")       // display on the web
