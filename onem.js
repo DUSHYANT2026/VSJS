@@ -106,3 +106,100 @@
 
 
 // DAY 3:
+
+// let num = 100;
+// if(num > 0){
+//     console.log("THE NUMBER IS POSITIVE");
+// }else if(num == 0){
+//     console.log("THE NUMBER IS ZERO");
+// }else{
+//     console.log("THE NUMBER IS NEGATIVE");
+// }
+
+
+// let age = 10;
+// if(age >= 18) console.log("ELIGIBAL TO VOTE");
+// else console.log("NOT ELIGIBAL TO VOTE");
+
+
+
+// let a = 700 ; let b = 100; let c = 1000;
+// if(a > b){
+//     if(a > c){
+//         console.log("A IS GREATER");
+//     }else{
+//         console.log("C IS GREATER");
+//     }
+// }else if(b > c){
+//     if(b > a){
+//         console.log("B IS GREATER");
+//     }else{
+//         console.log("A IS GREATER");
+//     }
+// }else{
+//     console.log("C IS GREATER");
+// }
+
+
+// let day = 5;
+// switch(day){
+//     case 1:
+//         console.log("MONDAY")
+//         break;
+//     case 2:
+//         console.log("TUESDAY")
+//         break;
+//     case 3:
+//         console.log("WEBNESDY")
+//         break;
+//     case 4:
+//         console.log("THURSDAY")
+//         break;
+//     case 5:
+//         console.log("FRIDAY")
+//         break;
+//     case 6:
+//         console.log("SATURDAY")
+//         break;
+//     case 7:
+//         console.log("SUNDAY")
+//         break;
+//     default:
+//         console.log("ENTER THE VALID NUMBER")
+// }
+
+
+// let grade;
+// let score = 100;
+// switch (true) {
+//     case (score >= 90):
+//         grade = 'A';
+//         break;
+//     case (score >= 80):
+//         grade = 'B';
+//         break;
+//     case (score >= 70):
+//         grade = 'C';
+//         break;
+//     case (score >= 60):
+//         grade = 'D';
+//         break;
+//     case (score >= 50):
+//         grade = 'E';
+//         break;
+//     default:
+//         grade = 'F';
+// }
+// console.log(grade);
+
+
+// let nums = 0;
+// (nums%2 == 0 && nums > 0) ? console.log("EVEN NUMBER") : (nums%2 != 0 && nums>0) ? console.log("ODD NUMBER") : console.log("ZERO");
+
+
+// let year = 2016;
+// ((year % 4  == 0 && year % 100 != 0) || year % 400 == 0) ? console.log("LEAP YEAR") : console.log("NOT A LEAP YEAR");
+
+
+// DAY 4:
+
