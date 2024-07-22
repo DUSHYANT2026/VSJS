@@ -243,3 +243,59 @@ const username = () => (  {username: "Dushyant-sharma"}    );
 ( () => {
     console.log("wwe")
 })()
+
+
+
+
+
+
+
+
+
+
+// CODE TO CHECK THE STRONG-NUMBER
+
+// let main = 145
+// let temp = main;
+
+// function factorial(n) {
+//     let temp = 1;
+//     for(let i=1; i<=n; i++){
+//         temp *= i;
+//     }
+//     return temp;
+// }
+
+// let ans = 0;
+// while(temp != 0){
+//     let r = temp%10;
+//     ans += factorial(r);
+//     temp = Math.floor(temp / 10);
+// }
+
+// if(ans == main){
+//     console.log(main  +  "  yes this number is factorial")
+// }else{
+//     console.log(main + "  not a factorial number")
+// }
+
+
+
+// CODE TO CHECK THE ARMSTRONG-NUMBER
+
+// let original = 370;
+// let temp = original;
+// let numlength = original.toString().length;
+
+// let ans = 0;
+// while(temp != 0){
+//     let r = temp%10;
+//     ans += Math.pow(r,numlength);
+//     temp = Math.floor(temp/10);          // always use the math.floor in js
+// }
+
+// if(ans == original){
+//     console.log(original + " THIS NUMBER IS THE ARMSTRON-NUMBER");
+// }else{
+//     console.log(original + " THIS NUMBER IS NOT A ARMSTRONG NUMBER");
+// }
