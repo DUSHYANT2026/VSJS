@@ -201,5 +201,108 @@
 // ((year % 4  == 0 && year % 100 != 0) || year % 400 == 0) ? console.log("LEAP YEAR") : console.log("NOT A LEAP YEAR");
 
 
-// DAY 4:
 
+
+// DAY 4: LOOPS
+
+// let temp = 10;
+// for(let i=1; i <= 10; i++){
+//     console.log(i);
+// }
+
+// console.log('\n');
+
+// let table = 79;
+// for(let i=1; i<=10; i++){
+//     console.log(table+' * '+i +' = '+table*i)
+// }
+
+
+// let sum = 0;
+// let i = 1;
+// while( i <= 10){
+//     sum += i;
+//     i++;
+// }
+// console.log(sum);
+
+
+
+// let j = 10;
+// while( j > 0){
+//     console.log(j);
+//     j--;
+// }
+
+
+// let k = 1;
+// do{
+//     console.log(k)
+//     k++;
+// }while(k <= 5)
+
+
+
+// let fact = 1;
+// let num = 5;
+// let l = 1;
+// do{
+//     fact *= l;
+//     l++;
+// }while(l <= num)
+// console.log(fact);
+
+
+// for(let i=1; i<= 10; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(' * ');           // help to write in the same line
+//     }
+//     console.log()
+// }
+
+// for(let i=0; i<=10; i++){
+//     if(i == 5) continue;
+//     console.log(i);
+// }
+
+// for(let i=0; i<=10; i++){
+//     if(i == 7) break;
+//     console.log(i);
+// }
+
+
+
+// DAY 5: FUNCTION
+
+function check(num){
+    let temp = "";
+    if(num%2 == 0){
+        temp = "EVEN NUMBER"
+    }
+    else{
+        temp = "odd number"
+    }
+    return temp;
+}
+let temp = check(4)            //  create reference and stored into a variable
+console.log(temp);            // print the stored variable
+
+
+function check2(num) {
+    let ans = 0;
+    ans = Math.floor(num * num);
+    return ans;
+}console.log(check2(5));
+
+let ans = Number.MIN_VALUE;
+function check3(x , y){
+    ans = Math.min(x,y);
+    return ans;
+}console.log(check3(40,2000));
+
+
+let ans1 = Infinity;
+function check4(x , y){
+    ans1 = Math.max(x,y);
+    return ans1;
+}console.log(check4(242,2032990357));

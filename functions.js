@@ -240,9 +240,9 @@ const username = () => (  {username: "Dushyant-sharma"}    );
 
 
 
-( () => {
-    console.log("wwe")
-})()
+// ( () => {
+//     console.log("wwe")
+// })()
 
 
 
@@ -255,29 +255,33 @@ const username = () => (  {username: "Dushyant-sharma"}    );
 
 // CODE TO CHECK THE STRONG-NUMBER
 
-// let main = 145
-// let temp = main;
 
-// function factorial(n) {
-//     let temp = 1;
-//     for(let i=1; i<=n; i++){
-//         temp *= i;
-//     }
-//     return temp;
-// }
+let main = 145
+let temp = main;
 
-// let ans = 0;
-// while(temp != 0){
-//     let r = temp%10;
-//     ans += factorial(r);
-//     temp = Math.floor(temp / 10);
-// }
+function factorial(n) {
+    let temp = 1;
+    for(let i=1; i<=n; i++){
+        temp *= i;
+    }
+    return temp;
+}
 
-// if(ans == main){
-//     console.log(main  +  "  yes this number is factorial")
-// }else{
-//     console.log(main + "  not a factorial number")
-// }
+let ans = 0;
+while(temp != 0){
+    let r = temp%10;
+    ans += factorial(r);
+    temp = Math.floor(temp / 10);
+}
+
+if(ans == main){
+    console.log(main  +  "  yes this number is factorial")
+}else{
+    console.log(main + "  not a factorial number")
+}
+
+
+
 
 
 
@@ -299,3 +303,7 @@ const username = () => (  {username: "Dushyant-sharma"}    );
 // }else{
 //     console.log(original + " THIS NUMBER IS NOT A ARMSTRONG NUMBER");
 // }
+
+
+
+
