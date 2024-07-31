@@ -306,3 +306,23 @@ function check4(x , y){
     ans1 = Math.max(x,y);
     return ans1;
 }console.log(check4(242,2032990357));
+
+function stringadd(x,y){
+    let temp = "";
+    temp = x + y;
+    return temp;
+}console.log(stringadd("king of ","kings"));
+
+const sum = ((x,y) => {
+    return x+y;
+})(10,30);
+console.log(sum);
+
+let checkstring = ( (s) => {
+    for(let i=0; i<s.length; i++){
+        if(s[i] == '*') return true;
+    }
+    return false;
+})("king of * kings");
+
+console.log(checkstring);
