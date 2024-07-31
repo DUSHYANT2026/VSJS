@@ -307,16 +307,19 @@ function check4(x , y){
     return ans1;
 }console.log(check4(242,2032990357));
 
+
 function stringadd(x,y){
     let temp = "";
     temp = x + y;
     return temp;
 }console.log(stringadd("king of ","kings"));
 
+
 const sum = ((x,y) => {
     return x+y;
 })(10,30);
 console.log(sum);
+
 
 let checkstring = ( (s) => {
     for(let i=0; i<s.length; i++){
@@ -326,3 +329,22 @@ let checkstring = ( (s) => {
 })("king of * kings");
 
 console.log(checkstring);
+
+let multiple = ( (x  , y =9) => {
+    let temp = x*y;
+    return temp;
+})(20);
+console.log(multiple);
+
+
+
+function Multiplier(n) {             // higher order of programe
+    return function(x) {
+        return x * n;
+    };
+}
+const times = Multiplier(9);
+const anstemp = times(5);
+console.log(anstemp);  
+
+
